@@ -1,0 +1,80 @@
+:root {
+  --color-body-background: #dadfe8;
+  --color-eletic: #fcc719;
+  --color-dragon: #c29791;
+  --color-water: #76befe;
+  --color-fire: #ed8a8b;
+  --color-grass: #49d0b0;
+  --color-darkness: #ba68c8;
+
+  --color-white: #ffffff;
+  --color-text: #121214;
+  --color-border-gray: #bebebe;
+  --color-background-button: #6b727a;
+
+  --color-background-button_hover: #fd8789;
+  --color-background-button_select: #fa6668;
+  --color-background-button_active: #c54446;
+
+  --background-overlay-url: url('../../public/assets/overlay.png');
+
+  font-size: 62.5%; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 58%;
+  }
+}
+
+body {
+  background-color: var(--color-body-background);
+}
+
+button * {
+  pointer-events: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}

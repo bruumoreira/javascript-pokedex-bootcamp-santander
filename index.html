@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR" translate="yes">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="public/assets/icon.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <link rel="stylesheet" href="src/styles/animations.css" />
+
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/responsive.css" />
+
+    <!-- Load JavaScript code -->
+    <script defer src="./src/scripts/index.js"></script>
+
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <div class="pokedex_wrapper">
+      <main class="main_container">
+        <section class="cards_container">
+          <div class="card" data-pokemon-card-id="1">
+            <header class="card__header eletric">
+              <div class="card__details">
+                <h1>
+                  <strong>Pikachu</strong>
+                  <span>#001</span>
+                </h1>
+
+                <mark class="pokemon-type">Elétrico</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img src="./public/assets/images/pikachu.png" alt="Pikachu" />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 35</li>
+                  <li>Ataque: 55</li>
+                  <li>Defesa: 40</li>
+                  <li>Velocidade: 90</li>
+                  <li>Total: 220</li>
+                  
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Choque do trovão</li>
+                  <li>Ataque rápido</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="card" data-pokemon-card-id="2">
+            <header class="card__header grass">
+              <div class="card__details">
+                <h1>
+                  <strong>Bulbasaur</strong>
+                  <span>#002</span>
+                </h1>
+
+                <mark class="pokemon-type">Grama</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img
+                  src="./public/assets/images/bulbasaur.png"
+                  alt="Bulbasaur"
+                />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 45</li>
+                  <li>Ataque: 49</li>
+                  <li>Defesa: 49</li>
+                  <li>Velocidade: 45</li>
+                  <li>Total: 188</li>
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Ataque de terra</li>
+                  <li>Defesa extra</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="card" data-pokemon-card-id="3">
+            <header class="card__header fire">
+              <div class="card__details">
+                <h1>
+                  <strong>Charmander</strong>
+                  <span>#003</span>
+                </h1>
+
+                <mark class="pokemon-type">Fogo</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img
+                  src="./public/assets/images/charmander.png"
+                  alt="Charmander"
+                />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 39</li>
+                  <li>Ataque: 52</li>
+                  <li>Defesa: 43</li>
+                  <li>Velocidade: 65</li>
+                  <li>Total: 199</li>
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Ataque de fogo</li>
+                  <li>Defesa extra contra fogo</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="card" data-pokemon-card-id="4">
+            <header class="card__header water">
+              <div class="card__details">
+                <h1>
+                  <strong>Vaporeon</strong>
+                  <span>#004</span>
+                </h1>
+
+                <mark class="pokemon-type">Água</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img src="./public/assets/images/vaporeon.png" alt="Vaporeon" />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 44</li>
+                  <li>Ataque: 60</li>
+                  <li>Defesa: 65</li>
+                  <li>Velocidade: 43</li>
+                  <li>Total: 200</li>
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Raio aurora</li>
+                  <li>Dreno de bolha</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="card" data-pokemon-card-id="5">
+            <header class="card__header darkness">
+              <div class="card__details">
+                <h1>
+                  <strong>Gengar</strong>
+                  <span>#005</span>
+                </h1>
+
+                <mark class="pokemon-type">Trevas</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img src="./public/assets/images/gengar.png" alt="Gengar" />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 60</li>
+                  <li>Ataque: 65</li>
+                  <li>Defesa: 60</li>
+                  <li>Velocidade: 110</li>
+                  <li>Total: 295</li>
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Trevas e escuridão</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="card" data-pokemon-card-id="6">
+            <header class="card__header dragon">
+              <div class="card__details">
+                <h1>
+                  <strong>Dragonite</strong>
+                  <span>#006</span>
+                </h1>
+
+                <mark class="pokemon-type">Dragão</mark>
+              </div>
+
+              <div class="image_wrapper">
+                <img
+                  src="./public/assets/images/dragonite.png"
+                  alt="Dragonite"
+                />
+              </div>
+            </header>
+
+            <section class="card__content">
+              <div class="status_container">
+                <h3>Status</h3>
+
+                <ul class="status__list">
+                  <li>HP: 91</li>
+                  <li>Ataque: 134</li>
+                  <li>Defesa: 95</li>
+                  <li>Velocidade: 80</li>
+                  <li>Total: 400</li>
+                </ul>
+              </div>
+
+              <div class="skills_container">
+                <h3>Habilidades</h3>
+
+                <ul class="skills__list">
+                  <li>Ataque flamejante</li>
+                  <li>Fúria do dragão</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <nav class="navigation_bar">
+          <ul class="navigation_list">
+            <li>
+              <button class="pokemon-select" type="button" data-id="1">
+                <img
+                  src="./public/assets/images/head-pikachu.png"
+                  alt="Head Pikachu"
+                />
+                <span>Pikachu</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="pokemon-select" type="button" data-id="2">
+                <img
+                  src="./public/assets/images/head-bulbasaur.png"
+                  alt="Head bulbasaur"
+                />
+                <span>Bulbasaur</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="pokemon-select" type="button" data-id="3">
+                <img
+                  src="./public/assets/images/head-charmander.png"
+                  alt="Head Charmander"
+                />
+                <span>Charmander</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="pokemon-select" type="button" data-id="4">
+                <img
+                  src="./public/assets/images/head-vaporeon.png"
+                  alt="Head Vaporeon"
+                />
+                <span>Vaporeon</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="pokemon-select" type="button" data-id="5">
+                <img
+                  src="./public/assets/images/head-gengar.png"
+                  alt="Head Gengar"
+                />
+                <span>Gengar</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="pokemon-select" type="button" data-id="6">
+                <img
+                  src="./public/assets/images/head-dragonite.png"
+                  alt="Head Dragonite"
+                />
+                <span>Dragonite</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+  </body>
+</html>

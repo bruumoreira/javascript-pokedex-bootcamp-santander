@@ -1,0 +1,266 @@
+/** Global element: div */
+.pokedex_wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.main_container {
+  width: min(100%, 750px);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards_container {
+  width: min(100%, 42rem);
+}
+
+.card {
+  display: none;
+
+  width: 100%;
+  background-color: transparent;
+
+  border-radius: 1rem; 
+  overflow: hidden;
+
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+
+  animation: to_right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card.visible {
+  display: block;
+}
+
+.card__header {
+  position: relative;
+
+  width: 100%;
+  padding: 4rem;
+
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--background-overlay-url) no-repeat;
+
+  background-size: 80% 90%;
+  background-position: center;
+}
+
+.card__header.eletric {
+  background-color: var(--color-eletic);
+}
+
+.card__header.water {
+  background-color: var(--color-water);
+}
+
+.card__header.fire {
+  background-color: var(--color-fire);
+}
+
+.card__header.grass {
+  background-color: var(--color-grass);
+}
+
+.card__header.dragon {
+  background-color: var(--color-dragon);
+}
+
+.card__header.darkness {
+  background-color: var(--color-darkness);
+}
+
+.card__details {
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__details h1 {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__details h1 strong {
+  color: var(--color-white);
+  font-size: 2.4rem;
+}
+
+.card__details h1 span {
+  color: var(--color-white);
+
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.pokemon-type {
+  user-select: none;
+
+  display: inline-block;
+
+  padding: 0.7rem;
+  margin: 0.5rem;
+
+  background-color: var(--color-white);
+  border-radius: 48%;
+
+  text-transform: capitalize;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #121212;
+
+  opacity: 0.8;
+  transition: opacity 0.4s ease-in;
+
+  cursor: pointer;
+}
+
+.pokemon-type:hover {
+  opacity: 1;
+}
+
+/** Pokemon image */
+.image_wrapper {
+  margin-bottom: -10rem;
+}
+
+.image_wrapper img {
+  width: 30rem;
+  height: 30rem;
+}
+
+/**
+ - Card content
+*/
+.card__content {
+  width: 100%;
+  padding: 4rem;
+
+  background-color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+}
+
+.card__content > div {
+  flex: 1;
+  margin: 1.5rem 0 0 2rem;
+}
+
+.card__content .status_container {
+  margin-left: 0;
+}
+
+.card__content ul {
+  list-style: none;
+}
+
+.card__content h3 {
+  font-size: 2rem;
+
+  padding: 0.5rem 0;
+
+  border-bottom: 1px solid var(--color-border-gray);
+}
+
+.card__content li {
+  color: var(--color-text);
+  font-size: 1.6rem;
+
+  line-height: 1.8;
+
+  border-bottom: 1px solid var(--color-border-gray);
+}
+
+.card__content li:last-child {
+  border: none;
+}
+
+/**
+ - Navigation
+*/
+.navigation_bar {
+  width: 25rem;
+  min-height: 100%;
+
+  animation: to_left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navigation_list li {
+  margin-bottom: 1rem;
+}
+
+.pokemon-select {
+  font-size: 0;
+
+  width: 100%;
+  padding: 1.4rem;
+
+  background-color: var(--color-background-button);
+  border-radius: 3rem 0.5rem 0.5rem 3rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.5);
+
+  transition: background 0.6s ease, transform 0.2s ease-out;
+}
+
+.pokemon-select:hover {
+  background-color: var(--color-background-button_hover);
+  transform: scale(1.05);
+}
+
+.pokemon-select.checked {
+  background-color: var(--color-background-button_select);
+}
+
+.pokemon-select.checked:hover {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pokemon-select.checked:active {
+  background-color: var(--color-background-button_active);
+}
+
+.navigation_list li span {
+  color: var(--color-white);
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.navigation_list li img {
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 50%;
+}
