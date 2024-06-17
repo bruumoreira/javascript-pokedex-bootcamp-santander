@@ -22,7 +22,12 @@ Na tela é possível visualizar os Pokémons cadastrados e seus detalhes.
    que está localizado na raiz do projeto (diretório principal) no navegador de sua preferência.
 
 3.  Se utilizar a extensão 'live server' do VSCode, ele vai abrir um servidor na porta 4200.
-  
+
+## Resultado
+Para acessar o resultado do projeto de estudo clique <a href="https://www.linkedin.com/in/bruna-moreira-torres-francisco/](https://github.com/bruumoreira/angular-psn-store/assets/114686979/f809ef1f-408f-4364-b58c-a7fa3416f6ec](https://github.com/bruumoreira/javascript-pokedex-bootcamp-santander/assets/114686979/49b90e33-a663-4e7c-8753-f57225500cf4" target="_blank">aqui</a> .
+
+https://github.com/bruumoreira/javascript-pokedex-bootcamp-santander/assets/114686979/49b90e33-a663-4e7c-8753-f57225500cf4
+
 ## Colaboradores
 Bruna Stefani Moreira Torres Francisco - <a href="https://www.linkedin.com/in/bruna-moreira-torres-francisco/" target="_blank">LinkedIn</a>
 
